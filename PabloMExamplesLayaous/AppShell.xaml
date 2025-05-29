@@ -6,7 +6,7 @@
     xmlns:local="clr-namespace:PabloMExamplesLayaous"
     Shell.FlyoutBehavior="Flyout"
     Title="PabloMExamplesLayaous">
-    <Flypoutitem    FlyoutDisplayOptions="AsMultipleItems">
+    <!--Flypoutitem    FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -15,6 +15,20 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    </Flypoutitem>
-    
+    </Flypoutitem-->
+    <TabBar>
+        <Tab Title="MainPage"
+             Icon="dotnet_bot.png">
+            <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+        </Tab>
+        <Tab Title="Demo"
+            <ShellContent
+            Title="Demo"
+            ContentTemplate="{DataTemplate local:Demo}"
+            Route="Demo" />
+        </Tab>
+    </TabBar>
 </Shell>

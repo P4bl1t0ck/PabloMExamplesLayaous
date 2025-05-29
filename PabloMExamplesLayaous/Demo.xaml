@@ -5,8 +5,14 @@
              Title="Demo">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            x:Name="TextoArchivo" />
+        <Entry
+            x:Name="Texto1"
+            Placeholder="Ingrese el texto"/>
+        <Button
+            x:Name="Boton"
+            text="Click Me"
+            Clicked="Boton_Clicked"
+            />
     </VerticalStackLayout>
 </ContentPage>
