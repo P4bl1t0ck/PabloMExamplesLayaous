@@ -6,10 +6,15 @@
     xmlns:local="clr-namespace:PabloMExamplesLayaous"
     Shell.FlyoutBehavior="Flyout"
     Title="PabloMExamplesLayaous">
-
-    <ShellContent
+    <Flypoutitem    FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
+        <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    </Flypoutitem>
+    
 </Shell>
